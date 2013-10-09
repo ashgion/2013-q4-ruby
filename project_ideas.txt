@@ -1,4 +1,14 @@
 Some project ideas:
+
+Tracking ski stats.... vertical miles covered, elevations, speed
+
+Lighting Layouts for custom homes... 
+Room.. fixtur, description, qty, price 
+
+Wholesale lighting orders 
+vendor, product, description, qty ordered, cost 
+
+
 - 
 - 
 - 
