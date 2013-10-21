@@ -1,1 +1,3 @@
-# TODO: write this
+Vehicle.create! \
+  name: ""
+  

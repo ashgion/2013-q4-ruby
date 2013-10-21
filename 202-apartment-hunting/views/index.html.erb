@@ -1,3 +1,29 @@
 <h1>Apartments</h1>
 
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>Address</th>
+    <th>Rent</th>
+    <th>Allows pets?</th>
+    <th>Link</th>
+  </tr>
+
+<% @apartments.each do |apartment| %>
+
+  <tr>
+    <td><%= apartment.id %></td>
+    <td><%= apartment.address %></td>
+    
+    <td class='money'> <!-- in css to make it line up -->
+         $<%= apartment.rent_per_month %>.00
+    </td>
+  
+    <td><%= apartment.does_allow_pets %></td>
+     
+    <td><a href="<%= apartment.url %>">Go to ad on Craigslist</a></td>
+  </tr>
+<% end %>
+</table>
+
 <!-- TODO: fill this part in -->

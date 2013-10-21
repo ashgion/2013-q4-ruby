@@ -1,3 +1,25 @@
 body {
   font-family: sans-serif;
 }
+
+.title {
+  background-color: #700;
+  padding: 10px;
+  color: white;
+  padding: 20px 50px 20px 50px;
+}
+
+.subtitle {
+  background-color: #700;
+  color: white;
+  }
+  
+.navtabs {
+  background-color: #700;
+  color: red; 
+  text-align: center; 
+  }
+  
+
+
+

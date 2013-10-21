@@ -1,8 +1,45 @@
 <h1>World cities</h1>
+<table border="1">
+  <tr>
+    <th>City Name</th>
+    <th>Country Flag</th>
+    <th>Time Zone</th>
+    <th>Population</th>
+  </tr>
+  
+  <% WorldCity.order(:city_name).each do |worldcity| %>
+  <tr>
+    <td><%= worldcity.city_name %></td>
+    <td><img src="/images/<%= worldcity.country_flag %>"></td>
+    <td><%= worldcity.time_zone %></td>
+    <td><%= worldcity.population %></td>
+  </tr>
+  <% end %>
+</table>
+  
+  
+  <!-- <tr>
+    <td>London, United Kingdom</td>
+    <td></td>
+    <td>UTC+0000</td>
+    <td>8,000,000</td>
+  </tr> 
 
+
+<!-- <ul>
+  <%3.times do %>
+    <li>London, United Kingdom</li>
+  <% end %>
+</ul>
+
+
+
+<!--London, United Kingdom                  UTC+0000  8,000,000
+Paris, France                           UTC+0100  2,000,000
+Shanghai, China                         UTC+0800  14,000,000
 <!-- TODO: write this -->
 
-<p>
+<!--<p>
 Here's an example flag image:
-<img src="/images/uk.png">
+<!-- <img src="/images/uk.png">
 </p>
